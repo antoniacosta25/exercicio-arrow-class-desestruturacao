@@ -30,3 +30,11 @@ console.log(tamanhos);
 
 // Rest: agrupa vários valores em uma única variável.
 // Spread: espalha os elementos de um array ou objeto.
+// Exercício 4 - A união faz a força
+
+const equipeMarketing = ['Joana', 'Marcela', 'Bruna'];
+const equipeComercial = ['Talita', 'Luisa', 'Vitória'];
+
+const timeCompleto = [...equipeMarketing, ...equipeComercial];
+
+realizaBrainstorm(timeCompleto);
