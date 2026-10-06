@@ -57,3 +57,32 @@ console.log(isEngenheiro(profissional)); // true
 profissional.titulo = 'Marketing';
 
 console.log(isEngenheiro(profissional)); // false
+// Exercício 7 - O meu videogame é muito melhor que o seu
+
+class VideoGame {
+    constructor(nome, fabricante, ano) {
+        this.nome = nome;
+        this.fabricante = fabricante;
+        this.ano = ano;
+    }
+}
+
+class PlayStation extends VideoGame {
+    constructor(nome, fabricante, ano, nEntradasUSB, voltagem, adicionais) {
+        super(nome, fabricante, ano);
+        this.nEntradasUSB = nEntradasUSB;
+        this.voltagem = voltagem;
+        this.adicionais = adicionais;
+    }
+}
+
+const playstation = new PlayStation(
+    'PlayStation 5',
+    'Sony',
+    2020,
+    3,
+    110,
+    ['Controle sem fio', 'Headset']
+);
+
+console.log(playstation);
