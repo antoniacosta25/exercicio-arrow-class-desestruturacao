@@ -86,3 +86,23 @@ const playstation = new PlayStation(
 );
 
 console.log(playstation);
+// Exercício 8 - Você cumpre as suas promessas?
+
+function simulaPromise(sucesso) {
+  return new Promise((resolve, reject) => {
+    if (sucesso) {
+      resolve("ok");
+    } else {
+      reject("not ok");
+    }
+  })
+    .then((mensagem) => {
+      console.log(mensagem);
+    })
+    .catch((erro) => {
+      console.log(erro);
+    });
+}
+
+simulaPromise(false); // not ok
+simulaPromise(true);  // ok
