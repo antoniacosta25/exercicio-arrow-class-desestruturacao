@@ -25,3 +25,8 @@ let palavroes = [
 let tamanhos = palavroes.map(palavrao => palavrao.length);
 
 console.log(tamanhos);
+
+// Exercício 3 - Não são só umas reticências?
+
+// Rest: agrupa vários valores em uma única variável.
+// Spread: espalha os elementos de um array ou objeto.
