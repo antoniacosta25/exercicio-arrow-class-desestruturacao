@@ -128,3 +128,14 @@ simulaPromise(true, 2000)
 simulaPromise(false, 1000)
   .then((data) => console.log(data))
   .catch((erro) => console.log(erro));
+promise
+  .then((data) => {
+    console.log(resultado positivo: ${data});
+    return data;
+  })
+  .then((data) => {
+    console.log(resultado positivo 2: ${data});
+  })
+  .catch((data) => {
+    console.log(resultado negativo: ${data});
+  });
