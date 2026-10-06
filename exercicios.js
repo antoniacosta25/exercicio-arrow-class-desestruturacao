@@ -38,3 +38,6 @@ const equipeComercial = ['Talita', 'Luisa', 'Vitória'];
 const timeCompleto = [...equipeMarketing, ...equipeComercial];
 
 realizaBrainstorm(timeCompleto);
+// Exercício 5 - Pegando a propriedade na lata
+
+const { email, nome, idade } = usuario;
