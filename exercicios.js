@@ -109,6 +109,17 @@ function simulaPromise(sucesso) {
     }, delay);
   });
 }
+function simulaPromise(valor, delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (valor) {
+        resolve("ok");
+      } else {
+        reject("not ok");
+      }
+    }, delay);
+  });
+}
 
 simulaPromise(true, 2000)
   .then((data) => console.log(data))
@@ -117,10 +128,3 @@ simulaPromise(true, 2000)
 simulaPromise(false, 1000)
   .then((data) => console.log(data))
   .catch((erro) => console.log(erro));
-    .catch((erro) => {
-      console.log(erro);
-    });
-}
-
-simulaPromise(false); // not ok
-simulaPromise(true);  // ok
