@@ -5,7 +5,7 @@ let carrinho = [
 ];
 
 const imprimeProduto = (nome, preco) => {
-    console.log('Produto: ${nome} | Preço: ${preco}');
+    console.log(`Produto: ${nome} | Preço: ${preco}`);
 };
 
 carrinho.forEach((produto) => {
